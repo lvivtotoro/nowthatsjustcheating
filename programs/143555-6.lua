@@ -4,4 +4,5 @@ function a(b, c)
   return b * c * #(tostring(b)) + a(b - 1, c + 1)
 end
 
+print(args)
 print(a(tonumber(args[0])))
