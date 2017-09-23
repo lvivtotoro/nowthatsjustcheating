@@ -34,7 +34,7 @@ public class NTJC {
 	}
 
 	public static void main(String[] args) {
-		if (args.length < 2)
+		if (args.length < 1)
 			throw new RuntimeException("Minimum arguments: 1");
 		Globals globals = JsePlatform.standardGlobals();
 		globals.set("args", CoerceJavaToLua.coerce(args));
